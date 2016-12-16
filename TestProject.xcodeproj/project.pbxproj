@@ -208,18 +208,17 @@
 					692CC4281E039A32005475E3 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 5J4GVGN58B;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					692CC4411E039A33005475E3 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 5J4GVGN58B;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 692CC4281E039A32005475E3;
 					};
 					692CC44C1E039A33005475E3 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 5J4GVGN58B;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 692CC4281E039A32005475E3;
 					};
 				};
@@ -425,11 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5J4GVGN58B;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.sdk.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9f416027-7f7b-4705-ac06-27c26c6c37bc";
+				PROVISIONING_PROFILE_SPECIFIER = R_Enterprise5th_161102;
 			};
 			name = Debug;
 		};
@@ -437,11 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5J4GVGN58B;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.sdk.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9f416027-7f7b-4705-ac06-27c26c6c37bc";
+				PROVISIONING_PROFILE_SPECIFIER = R_Enterprise5th_161102;
 			};
 			name = Release;
 		};
@@ -474,7 +479,7 @@
 		692CC45D1E039A33005475E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5J4GVGN58B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.sdk.TestProjectUITests;
@@ -486,7 +491,7 @@
 		692CC45E1E039A33005475E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5J4GVGN58B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.sdk.TestProjectUITests;
@@ -514,6 +519,7 @@
 				692CC4581E039A33005475E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		692CC4591E039A33005475E3 /* Build configuration list for PBXNativeTarget "TestProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +528,7 @@
 				692CC45B1E039A33005475E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		692CC45C1E039A33005475E3 /* Build configuration list for PBXNativeTarget "TestProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +537,7 @@
 				692CC45E1E039A33005475E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
